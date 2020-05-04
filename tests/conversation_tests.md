@@ -1,51 +1,31 @@
-#### This file contains tests to evaluate that your bot behaves as expected.
-#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/user-guide/testing-your-assistant/
-
-## happy path 1
-* greet: hello there!
+## greet + goodbye
+* greet: Hi!
   - utter_greet
-* mood_great: amazing
-  - utter_happy
+* bye: Bye
+  - utter_bye
 
-## happy path 2
-* greet: hello there!
+## greet + thanks
+* greet: Hello there
   - utter_greet
-* mood_great: amazing
-  - utter_happy
-* goodbye: bye-bye!
-  - utter_goodbye
+* thank: thanks a bunch
+  - utter_noworries
 
-## sad path 1
-* greet: hello
+## greet + thanks + goodbye
+* greet: Hey
   - utter_greet
-* mood_unhappy: not good
-  - utter_cheer_up
-  - utter_did_that_help
-* affirm: yes
-  - utter_happy
+* thank: thank you
+  - utter_noworries
+* bye: bye bye
+  - utter_bye
 
-## sad path 2
-* greet: hello
-  - utter_greet
-* mood_unhappy: not good
-  - utter_cheer_up
-  - utter_did_that_help
-* deny: not really
-  - utter_goodbye
+## ask channels
+* faq: what messaging channels does rasa support?
+ - respond_faq
 
-## sad path 3
-* greet: hi
-  - utter_greet
-* mood_unhappy: very terrible
-  - utter_cheer_up
-  - utter_did_that_help
-* deny: no
-  - utter_goodbye
+## ask languages
+* faq: what languages can I build assistants in?
+ - respond_faq
 
-## say goodbye
-* goodbye: bye-bye!
-  - utter_goodbye
-
-## bot challenge
-* bot_challenge: are you a bot?
-  - utter_iamabot
+## ask rasa X
+* faq: what's Rasa X?
+ - respond_faq

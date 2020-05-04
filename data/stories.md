@@ -1,31 +1,21 @@
-## happy path
+## greet
 * greet
   - utter_greet
-* mood_great
-  - utter_happy
 
-## sad path 1
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* affirm
-  - utter_happy
+## thank
+* thank
+  - utter_noworries
 
-## sad path 2
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* deny
-  - utter_goodbye
+## goodbye
+* bye
+  - utter_bye
 
-## say goodbye
-* goodbye
-  - utter_goodbye
+## some questions to FAQ
+* faq
+  - respond_faq
 
-## bot challenge
-* bot_challenge
-  - utter_iamabot
+## sales form
+* contact_sales
+  - sales_form
+  - form{"name": "sales_form"}
+  - form{"name": null}
