@@ -35,15 +35,20 @@ class SalesForm(FormAction):
     @staticmethod
     def required_slots(tracker):
         return [
-            "company",
             "budget",
             "use_case",
             "job_function",
             "person_name",
-            "business_email"
+            "business_email",
+            "company"
         ]
-
-    def submit(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any],) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("Thanks for getting in touch, we will contact you soon")
-
-        return []   
+        
+    def submit(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain
+    ):
+        dispatcher.utter_message("Thanks for getting in touch, we'll contact you soon")
+        return []
+    

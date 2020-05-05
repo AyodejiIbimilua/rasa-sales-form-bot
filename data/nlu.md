@@ -60,6 +60,23 @@
 - sales please
 
 ## intent: inform
+- My name is [Ola Matthew](person_name)
+- I am [Ola Dada](person_name)
+- [Ojo Dada](person_name)
+- My name is [Adeleye Peter](person_name)
+- Okay, my name is [Olabanji Kemi](person_name)
+- Alright, [Popoola Raymond](person_name)
+- [Ibukun Ayomide](person_name)
+- [Ayodeji Faith](person_name)
+- [Funmilayo Kemi](person_name)
+- Sure[Ada Ngozi](person_name)
+- [Yemi Fasipe](person_name)
+- I am [Oladipupo Jay](person_name)
+- okay, [Ola Tosin](person_name)
+- [15,000 naira](budget)
+- [100,000 naira](budget)
+- [two hundred thousand naira](budget)
+- [200,000 naira](budget)
 - [100k](budget)
 - [100k](budget)
 - [240k/year](budget)
@@ -71,11 +88,20 @@
 - it's a tech company, [Rasa](company)
 - [ACME](company)
 - [Rasa Technologies](company)
+- I work for Tbots [limited](company)
+- [Facebook](company)
+- [Bella collections](company)
+- [T hubs](company)
+- [portofino eateries](company)
 - [maxmeier@firma.de](business_email)
 - [bot-fan@bots.com](business_email)
 - [maxmeier@firma.de](business_email)
 - [bot-fan@bots.com](business_email)
 - [my email is email@rasa.com](business_email)
+- my email is [ayodejiibimilua4@gmail.com](email)
+- [ojoadekola@gmail.com](email)
+- [ade001@yahoo.com](email)
+- [btdhub@yahoo.com](email)
 - [engineer](job_function)
 - [brand manager](job_function)
 - [marketing](job_function)
@@ -89,6 +115,8 @@
 - [Max Mustermann](person_name)
 - [Max Meier](person_name)
 - We plan to build a [sales bot](use_case) to increase our sales by 500%.
+- we want an [ecommerce bot](use_case) for our online store
+- we want a [delivery bot](use_case) for our eatery
 - we plan to build a [sales bot](use_case) to increase our revenue by 100%.
 - a [insurance tool](use_case) that consults potential customers on the best life insurance to choose.
 - we're building a [conversational assistant](use_case) for our employees to book meeting rooms.
