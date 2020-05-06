@@ -1,0 +1,34 @@
+[
+  {
+    "text": "SureAda Ngozi",
+    "entities": [
+      {
+        "start": 4,
+        "end": 13,
+        "value": "Ada Ngozi",
+        "entity": "person_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "We plan to build a sales bot to increase our sales by 500%.",
+    "entities": [
+      {
+        "start": 19,
+        "end": 28,
+        "value": "sales bot",
+        "entity": "use_case"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "use_case",
+        "start": 25,
+        "end": 28,
+        "extractor": "DIETClassifier",
+        "value": "bot"
+      }
+    ]
+  }
+]

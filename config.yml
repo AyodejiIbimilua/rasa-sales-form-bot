@@ -2,7 +2,9 @@
 # https://rasa.com/docs/rasa/nlu/components/
 language: en
 pipeline:
-  - name: WhitespaceTokenizer
+  - name: SpacyNLP
+  - name: SpacyTokenizer
+  - name: SpacyFeaturizer
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
@@ -19,7 +21,9 @@ pipeline:
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/
 policies:
-  - name: MemoizationPolicy
+  - name: AugmentedMemoizationPolicy
   - name: MappingPolicy
   - name: FormPolicy
-  - name: KerasPolicy
+  - name: TEDPolicy
+  - name: TwoStageFallbackPolicy
+    nlu_threshold: 0.8

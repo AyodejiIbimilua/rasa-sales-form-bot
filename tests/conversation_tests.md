@@ -29,3 +29,17 @@
 ## ask rasa X
 * faq: what's Rasa X?
  - respond_faq
+
+## greet + form + bye
+* greet: Hi there
+ - utter_greet
+* contact_sales: I want to talk with the sales department
+ - sales_form
+ - form{"name": "sales_form"}
+* faq: Tell me about rasa x
+ - respond_faq
+ - form{"name": null}
+* thank: Thank you vey much
+ - utter_noworries
+* bye: Goodbye
+ - utter_bye

@@ -25,22 +25,23 @@
 - Thanks bot
 - Cheers
 - Thanks for that
+- thank you
 
-## intent: faq/ask_channels
+## intent:faq/ask_channels
 - What channels of communication does rasa support?
 - what channels do you support?
 - what chat channels does rasa uses?
 - channels supported by rasa
 - which messaging channel does  rasa support?
 
-## intent: faq/ask_languages
+## intent:faq/ask_languages
 - what language does rasa support?
 - which language do you support
 - which language supports rasa
 - can i use rasa for another language
 - languages supported
 
-## intent: faq/ask_rasax
+## intent:faq/ask_rasax
 - I want information about rasa x
 - i want to learn more about rasa x
 - what is rasa x
@@ -48,7 +49,7 @@
 - tell me more about rasa x
 - tell me about rasa x
 
-## intent: contact_sales
+## intent:contact_sales
 - I wanna talk to your sales people.
 - I want to talk to your sales people
 - I want to speak with sales
@@ -58,8 +59,9 @@
 - I want to get in touch with your sales guys
 - I would like to talk to someone from your sales team
 - sales please
+- i want to talk with the sales department
 
-## intent: inform
+## intent:inform
 - My name is [Ola Matthew](person_name)
 - I am [Ola Dada](person_name)
 - [Ojo Dada](person_name)
@@ -78,7 +80,6 @@
 - [two hundred thousand naira](budget)
 - [200,000 naira](budget)
 - [100k](budget)
-- [100k](budget)
 - [240k/year](budget)
 - [150,000 USD](budget)
 - I work for [Rasa](company)
@@ -86,6 +87,8 @@
 - company: [Rasa Technologies](company)
 - it's a small company from the US, the name is [Hooli](company)
 - it's a tech company, [Rasa](company)
+- [Friendlies Hotel](company)
+- [OS graphics](company)
 - [ACME](company)
 - [Rasa Technologies](company)
 - I work for Tbots [limited](company)
@@ -95,13 +98,15 @@
 - [portofino eateries](company)
 - [maxmeier@firma.de](business_email)
 - [bot-fan@bots.com](business_email)
-- [maxmeier@firma.de](business_email)
-- [bot-fan@bots.com](business_email)
 - [my email is email@rasa.com](business_email)
-- my email is [ayodejiibimilua4@gmail.com](email)
-- [ojoadekola@gmail.com](email)
-- [ade001@yahoo.com](email)
-- [btdhub@yahoo.com](email)
+- my email is [ayodejiibimilua4@gmail.com](business_email)
+- [ojoadekola@gmail.com](business_email)
+- [ade001@yahoo.com](business_email)
+- [btdhub@yahoo.com](business_email)
+- [adebanjiolmide@gmail.com](business_email)
+- [dejavu@gmail.com](business_email)
+- [portofino@yahoo.com](business_email)
+- my email is [friedlies@outlook.com](business_email)
 - [engineer](job_function)
 - [brand manager](job_function)
 - [marketing](job_function)
@@ -120,3 +125,15 @@
 - we plan to build a [sales bot](use_case) to increase our revenue by 100%.
 - a [insurance tool](use_case) that consults potential customers on the best life insurance to choose.
 - we're building a [conversational assistant](use_case) for our employees to book meeting rooms.
+- 400K
+- [news bot](use_case)
+- [marketer](job_function)
+- [Makinde Pelumi](person_name)
+- [okanlawon@yahoo.com](business_email)
+- [the vanguard](company)
+
+## intent:out_of_scope
+- I want to order food
+- What is 2 + 2?
+- Who’s the US President?
+- I need a job

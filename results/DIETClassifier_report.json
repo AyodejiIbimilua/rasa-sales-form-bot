@@ -1,0 +1,62 @@
+{
+  "business_email": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6
+  },
+  "person_name": {
+    "precision": 1.0,
+    "recall": 0.9411764705882353,
+    "f1-score": 0.9696969696969697,
+    "support": 34
+  },
+  "job_function": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 11
+  },
+  "use_case": {
+    "precision": 1.0,
+    "recall": 0.9166666666666666,
+    "f1-score": 0.9565217391304348,
+    "support": 12
+  },
+  "company": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 17
+  },
+  "budget": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 14
+  },
+  "email": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4
+  },
+  "micro avg": {
+    "precision": 1.0,
+    "recall": 0.9693877551020408,
+    "f1-score": 0.9844559585492229,
+    "support": 98
+  },
+  "macro avg": {
+    "precision": 1.0,
+    "recall": 0.9796918767507002,
+    "f1-score": 0.9894598155467721,
+    "support": 98
+  },
+  "weighted avg": {
+    "precision": 1.0,
+    "recall": 0.9693877551020408,
+    "f1-score": 0.9841628350945121,
+    "support": 98
+  }
+}

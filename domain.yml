@@ -1,10 +1,12 @@
 intents:
-  - greet
+  - greet: {triggers: action_greet}
   - bye
   - thank
   - faq
   - contact_sales
   - inform
+  - explain
+  - out_of_scope
 
 entities:
   - company
@@ -16,8 +18,32 @@ entities:
 
 actions:
   - respond_faq
+  - action_greet
+  - utter_noworries
+  - utter_greet
+  - utter_bye
+  - utter_out_of_scope
+  - utter_explain_why_budget
+  - utter_explain_why_email
+  - utter_ask_budget
+  - utter_ask_business_email
+  - utter_ask_company
+  - utter_ask_job_function
+  - utter_ask_use_case
+  - utter_ask_person_name
+  - utter_help_message
 
 slots:
+  requested_slot:
+    type: categorical
+    values:
+      - business_email
+      - use_case
+      - job_function
+      - budget
+      - person_name
+      - comapany
+
   company:
     type: unfeaturized
   job_function:
@@ -38,7 +64,7 @@ responses:
   utter_noworries:
     - text: No worries!
   utter_greet:
-    - text: Hi
+    - text: Hi there
   utter_bye:
     - text: Bye!
   utter_ask_business_email:
@@ -53,3 +79,11 @@ responses:
     - text: What is your name?
   utter_ask_use_case:
     - text: What is your use case?
+  utter_explain_why_budget:
+    - text: We need to know your budget to recommend a subscription
+  utter_explain_why_email:
+    - text: We need your email so we can contact you
+  utter_out_of_scope:
+    - text: Sorry I can't handle that request
+  utter_help_message:
+    - text: Here is a list of what i can currently handleokay

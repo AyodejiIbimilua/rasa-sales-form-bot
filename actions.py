@@ -12,7 +12,7 @@
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.forms import FormAction
-#
+from rasa_sdk.events import UserUtteranceReverted
 #
 # class ActionHelloWorld(Action):
 #
@@ -40,7 +40,7 @@ class SalesForm(FormAction):
             "job_function",
             "person_name",
             "business_email",
-            "company"
+            "company",
         ]
         
     def submit(
@@ -51,4 +51,24 @@ class SalesForm(FormAction):
     ):
         dispatcher.utter_message("Thanks for getting in touch, we'll contact you soon")
         return []
+
+    def slot_mappings(self):
+
+        return {
+            "use_case": self.from_text(intent="inform"),
+            "budget": self.from_text(intent="inform"),
+            "company": self.from_text(intent="inform"),
+            "person_name": self.from_text(intent="inform"),
+            "business_email": self.from_text(intent="inform"),
+            "job_function": self.from_text(intent="inform")
+        }
+
+
+class ActionGreetUser(Action):
+    def name(self):
+        return "action_greet"
+
+    def run(self, dispatcher, tracker, domain):
+        dispatcher.utter_template("utter_greet", tracker)
+        return [UserUtteranceReverted()]
     
