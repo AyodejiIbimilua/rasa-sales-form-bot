@@ -49,7 +49,7 @@
 - tell me more about rasa x
 - tell me about rasa x
 
-## intent:contact_sales
+## intent:contact_sales push 
 - I wanna talk to your sales people.
 - I want to talk to your sales people
 - I want to speak with sales
